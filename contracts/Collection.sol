@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
-contract ElvishMagicNFTs is ERC1155, Ownable {
+contract BoostStakeNFTs is ERC1155, Ownable {
     uint256 public constant BRONZE = 0;
     uint256 public constant SILVER = 1;
     uint256 public constant GOLD = 2;

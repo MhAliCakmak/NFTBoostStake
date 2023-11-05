@@ -9,13 +9,11 @@ contract BoostStakeToken is ERC20, Ownable, ERC20Permit {
     uint256 public taxRate = 5; // 5%
     mapping(address => bool) public whitelist;
 
-    constructor(
-        address initialOwner
-    )
+    constructor()
         ERC20("Boost Stake Token", "BST")
         ERC20Permit("Boost Stake Token")
     {
-        transferOwnership(initialOwner);
+        transferOwnership(msg.sender);
         _mint(msg.sender, 10000000 * 10 ** decimals());
     }
 
