@@ -1,5 +1,5 @@
-require('@nomicfoundation/hardhat-toolbox');
-
+require('@nomiclabs/hardhat-waffle');
+require('@nomiclabs/hardhat-ethers');
 require('@nomiclabs/hardhat-etherscan');
 const { privateKey, bscscanApiKey } = require('./secrets.json');
 
@@ -23,5 +23,5 @@ module.exports = {
   etherscan: {
     apiKey: bscscanApiKey,
   },
-  solidity: '0.8.17',
+  solidity: '0.8.19',
 };

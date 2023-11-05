@@ -1,9 +1,5 @@
-/**
- *Submitted for verification at BscScan.com on 2023-04-05
-*/
-
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.19;
 
 error TransferFailed();
 error NeedsMoreThanZero();

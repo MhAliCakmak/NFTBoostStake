@@ -13,9 +13,9 @@ contract BoostStakeToken is ERC20, Ownable, ERC20Permit {
         address initialOwner
     )
         ERC20("Boost Stake Token", "BST")
-        Ownable(initialOwner)
         ERC20Permit("Boost Stake Token")
     {
+        transferOwnership(initialOwner);
         _mint(msg.sender, 10000000 * 10 ** decimals());
     }
 

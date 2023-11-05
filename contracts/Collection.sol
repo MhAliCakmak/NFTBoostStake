@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.19;
 
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -11,7 +11,10 @@ contract ElvishMagicNFTs is ERC1155, Ownable {
     uint256 public constant GOLD = 2;
     uint256 public constant PLATINIUM = 3;
 
+    mapping(uint256 => bool) private _hasBeenTransferred;
+
     mapping(uint256 => string) private _uris;
+
 
     constructor()
         public
