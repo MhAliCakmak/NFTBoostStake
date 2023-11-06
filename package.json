@@ -14,7 +14,9 @@
     "next": "14.0.1",
     "next-themes": "0.1.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "web3modal": "1.9.5",
+    "axios": "^0.26.0"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.0",
